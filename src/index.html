@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Spotlight Electron</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="runner-input">
+        <ul id="tabs">
+            <li id="run" class="active">search</li>
+            <li id="close">close</li>
+        </ul>
+        <input id="searchBox" type="search" placeholder="Search for a application" autofocus="autofocus" />
+    </div>
+    <ul id="results"></ul>
+</body>
+<script>
+    const ipcRenderer = require('electron').ipcRenderer;
+    const _ = require('lodash');
+
+    let close = document.getElementById('close');
+    let searchBox = document.getElementById('searchBox');
+    let results = document.getElementById('results');
+
+    //---------------------------------------------------------
+    // IPC Listeners
+    //---------------------------------------------------------
+    ipcRenderer.on('search-reply', (event, data) => {
+        results.innerHTML = ""; // reset
+        _.each(data, function(item) {
+            let li = document.createElement("li");
+            li.innerText = item.name;
+            results.append(li);
+        })
+    });
+
+    //---------------------------------------------------------
+    //  DOM Listeners 
+    //--------------------------------------------------------- 
+    searchBox.addEventListener('keyup', _.debounce((e) => {
+        let value = searchBox.value.trim();
+        if (value.length > 0) {
+            ipcRenderer.send('search-request', value);
+        } else {
+            ipcRenderer.send('reset', 'size');
+            results.innerHTML = "";
+        }
+    }, 200));
+
+    close.addEventListener('click', (e) => window.close());
+</script>
+<script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+</script>
+
+</html>

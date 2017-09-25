@@ -1,0 +1,159 @@
+@font-face {
+    font-family: "San Francisco Display Ultralight";
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.eot?#iefix) format("embedded-opentype"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff2) format("woff2"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff) format("woff"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.ttf) format("truetype"), url("fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.svg#San Francisco Display Ultralight") format("svg");
+}
+
+@font-face {
+    font-family: "San Francisco Display Thin";
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.eot?#iefix) format("embedded-opentype"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff2) format("woff2"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff) format("woff"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.ttf) format("truetype"), url("fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.svg#San Francisco Display Thin") format("svg");
+}
+
+@font-face {
+    font-family: "San Francisco Display Medium";
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.eot?#iefix) format("embedded-opentype"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff2) format("woff2"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff) format("woff"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.ttf) format("truetype"), url("fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.svg#San Francisco Display Medium") format("svg");
+}
+
+@font-face {
+    font-family: "San Francisco Display Semibold";
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.eot?#iefix) format("embedded-opentype"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff2) format("woff2"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff) format("woff"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.ttf) format("truetype"), url("fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.svg#San Francisco Display Semibold") format("svg");
+}
+
+@font-face {
+    font-family: "San Francisco Display Bold";
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.eot?#iefix) format("embedded-opentype"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff2) format("woff2"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff) format("woff"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.ttf) format("truetype"), url("fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.svg#San Francisco Display Bold") format("svg");
+}
+
+* {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+body {
+    font-family: 'San Francisco Display Thin';
+    font-weight: 600;
+    min-height: 100;
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+    margin: 0 auto;
+    background: #29343e;
+    border-radius: 4px;
+    padding: 0px 0px 0px 0px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    overflow: hidden;
+    -webkit-app-region: drag;
+}
+
+#searchBox {
+    width: 100%;
+    font-family: 'San Francisco Display Ultralight';
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 0.5em 1em 0.5em 0.5em;
+    outline: none;
+    margin: 0em auto;
+    transition: margin ease 0.3s;
+    -webkit-font-smoothing: auto;
+}
+
+input#searchBox::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.3);
+    padding-left: 0px;
+    transition: all 0.2s ease;
+}
+
+input#searchBox::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.3);
+    padding-left: 0px;
+    transition: all 0.2s ease;
+}
+
+input#searchBox:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.3);
+    padding-left: 0px;
+    transition: all 0.2s ease;
+}
+
+input#searchBox::-webkit-search-cancel-button {
+    -webkit-app-region: no-drag;
+}
+
+#tabs {
+    text-align: left;
+    padding: 0em 0.5em;
+}
+
+#tabs li {
+    padding: 5px 0px;
+    display: inline-block;
+    background: transparent;
+    font-family: 'San Francisco Display Medium';
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    -webkit-font-smoothing: antialiased;
+    -webkit-app-region: no-drag;
+}
+
+#tabs li.active {
+    color: #fbd159;
+}
+
+#results {
+    -webkit-app-region: no-drag;
+    width: 600px;
+    margin: -5px auto;
+    padding-top: 5px;
+    height: 218px;
+    overflow: auto;
+    border-radius: 0 0 4px 4px;
+}
+
+#results li {
+    background-color: $blue-color;
+    display: flex;
+    position: relative;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 11px 0em 12px 18px;
+    margin: -2px auto;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    border-radius: 0 0 4px 4px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: opacity ease 0.3s, height ease 0.3s, margin ease 0.3s, padding ease 0.3s;
+}
+
+ ::-webkit-scrollbar {
+    width: 6px;
+}
+
+ ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: rgb(52, 62, 72);
+}
+
+ ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #fbd159;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}

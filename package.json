@@ -1,0 +1,22 @@
+{
+  "name": "spotlight-electron",
+  "version": "1.0.0",
+  "description": "Spotlight alternative written in Electron",
+  "main": "./src/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/robiXxu/spotlight-electron",
+  "keywords": [
+    "Electron",
+    "Spotlight",
+    "cross-platform"
+  ],
+  "author": "Schiriac Robert <schiriac.robert@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "~1.6.2",
+    "fuse.js": "^3.1.0",
+    "lodash": "^4.17.4"
+  }
+}
